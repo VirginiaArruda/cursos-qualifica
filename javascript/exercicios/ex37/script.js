@@ -29,7 +29,6 @@ class Carrinho {
         for(let itemCarrinho in this.itens) {
             if(this.itens[itemCarrinho].id == item.id) {
                 
-                let obj = this.itens[itemCarrinho];
                 let index = this.itens.findIndex(function(obj) {return obj.id == item.id});
 
                 this.qtd -= this.itens[itemCarrinho].qtd;
